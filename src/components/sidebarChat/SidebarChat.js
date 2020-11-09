@@ -1,23 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './SidebarChat.css'
 import { Avatar } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setCurrentChat } from '../../redux/actions';
 
-function SidebarChat({ addNewChat, chatData }) {
+function SidebarChat({ chatData }) {
     const dispatch = useDispatch()
 
     const chooseChat = () => {
         dispatch(setCurrentChat(chatData))
     }
-    // const createChat = () => {
-    //     const roomName = prompt('Please enter name for chat')
-
-    //     if (roomName) {
-    //         // do some database stuff
-    //     }
-    // }
 
 
     return (

@@ -6,9 +6,6 @@ import './Login.css'
 import { setUser } from '../../redux/actions'
 
 function Login() {
-    // const { user } = useSelector(state => ({
-    //     user: state.user
-    //   }))
     const dispatch = useDispatch()
 
     const signIn = () => {

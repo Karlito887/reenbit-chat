@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { receiveMessage, sendMessage } from '../../redux/actions';
 import { savedState } from '../../redux/reducer';
 import { dateFormat } from '../../contactsData';
-// import { useParams } from 'react-router-dom';
 
 function Chat() {
     const [input, setInput] = useState('')
@@ -78,7 +77,6 @@ function Chat() {
                     }}>
                         <Send />
                     </IconButton>
-                    {/* <button>Send a message</button> */}
                 </div>
             </div>
         </div>
